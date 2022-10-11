@@ -54,8 +54,8 @@ app.post("/", function(req, res) {
 })
 
 
-
-app.listen(3000, function() {
+//port for heroku or local
+app.listen(preocess.env.PORT || 3000, function() {
     console.log("Server is running on port 3000"); 
 })
 
